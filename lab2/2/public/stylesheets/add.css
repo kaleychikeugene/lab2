@@ -1,0 +1,27 @@
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    background: #a4c7a4;
+}
+
+nav {
+    width: 250px;
+    border-right: 1px solid #000000;
+    padding-top: 5px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}

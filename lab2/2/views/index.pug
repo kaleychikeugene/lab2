@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/index.css">
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="/">Записи</a></li>
+                    if isAuthenticated
+                        <li><a href="/add">Добавить запись</a></li>
+                        <li><a href="/logout">Выйти</a></li>
+                    if !isAuthenticated
+                        <li><a href="/login">Войти</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section id="blog">
+                    each article in articles
+                        <article class="article">
+                            <header class="article__header">#{article.title}</header>
+                            <header class="article__header">#{article.preview}</header>
+                                a(class="button button--show-more" href='/article/?id=' + article._id) Подробнее
+                        </article>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

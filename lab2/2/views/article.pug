@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/index.css">
+    </head>
+    <body>
+        <div class="content-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="/">Записи</a></li>
+                    if isAuthenticated
+                        <li><a href="/add">Добавить запись</a></li>
+                        <li><a href="/logout">Выйти</a></li>
+                    if !isAuthenticated
+                        <li><a href="/login">Войти</a></li>
+                        <li><a href="/registration">Регистрация</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section id="blog">
+                        <article class="article">
+                            <header class="article__header">#{article.title}</header>
+                            <main class="article__main">
+                                <div class="article__main-text">#{article.preview}</div>
+                                <div class="article__main-text">#{article.text}</div>
+                            </main>
+                        </article>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

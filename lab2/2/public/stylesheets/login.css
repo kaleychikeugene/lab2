@@ -1,0 +1,16 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    width: 40%;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
